@@ -24,7 +24,7 @@ neweS(mat, vlist, vlabel = as.list(names(vlist)))
 }
 \references{ \url{http://www.idav.ucdavis.edu/~dmrocke/} }
 \author{ David Rocke and Geun-Cheol Lee }
-\seealso{ \code{\link{as}} }
+\seealso{ \code{\link[methods]{as}} }
 \examples{
 #library
 library(Biobase)
