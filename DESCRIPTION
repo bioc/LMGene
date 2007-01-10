@@ -11,4 +11,3 @@ Description: LMGene package for analysis of microarray data
 License: LGPL
 URL: http://www.idav.ucdavis.edu/~dmrocke/software.html
 biocViews: Microarray, Statistics, DifferentialExpression, Preprocessing
-Packaged: Fri Sep 29 12:41:05 2006; tilling
