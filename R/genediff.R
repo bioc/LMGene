@@ -15,13 +15,13 @@ function(eS, model=NULL)
 # create variables
 #
 { 
-  mat1 <- as.matrix(eS@exprs)
+  mat1 <- as.matrix(exprs(eS))
   
   if (is.null(model)) {
-    model=''
-    vars <- eS@phenoData@varLabels
+    model <- ''
+    vars <- varLabels(eS)
     for (i in 1:length(vars)){
-      model=paste(model, vars[i], ifelse(i<length(vars), '+', ''), sep='')
+      model <- paste(model, vars[i], ifelse(i<length(vars), '+', ''), sep='')
     }
   } 
 
@@ -35,7 +35,7 @@ function(eS, model=NULL)
   owaov <- function(y)
   {
     formobj <- as.formula(model2)
-    tmp <- row.names(anova(lm(formobj, data=eS@phenoData@pData)))
+    tmp <- row.names(anova(lm(formobj, data=pData(eS))))
     return(tmp)
   }
   effnames <- owaov(mat2[1,])
@@ -64,7 +64,6 @@ function(eS, model=NULL)
   eta <- alpha*beta
   prior <- 1/eta
   df <- 2*alpha
-#print(c(mn,v,alpha,beta,eta,prior,df))
 #
 # compute adjusted mean square errors
 #
@@ -82,6 +81,6 @@ function(eS, model=NULL)
   }
   colnames(pmat1) <- effnames[-numeff]
   colnames(pmat2) <- effnames[-numeff]
-return(list("Gene.Specific"=pmat1,"Posterior"=pmat2))
 
+  return(list("Gene.Specific"=pmat1,"Posterior"=pmat2))
 }

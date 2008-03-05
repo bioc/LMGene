@@ -1,23 +1,16 @@
 \name{sample.eS}
 \alias{sample.eS}
 \docType{data}
-\title{ Sample array data for LMGene}
+\title{Sample array data for LMGene}
 \description{
-  'exprSet' class data 
+  Sample 'ExpressionSet' class data.
 }
 \usage{data(sample.eS)}
 \format{
-  The format is:
-Formal class 'exprSet' [package "Biobase"] with 6 slots
-  ..@ exprs   
-  ..@ se.exprs 
-  ..@ phenoData
-  ..@ description
-  ..@ annotation
-  ..@ notes 
+  Formal class 'ExpressionSet' [package "Biobase"].
 }
 \details{
-  identical with 'neweS(sample.mat,vlist)'
+  identical with 'neweS(sample.mat, vlist)'
 }
 \examples{
 #library
@@ -28,7 +21,7 @@ library(LMGene)
 data(sample.mat)
 data(vlist)
 
-Smpdt<-neweS(sample.mat,vlist)
+Smpdt <- neweS(sample.mat,vlist)
 
 data(sample.eS)
 identical(sample.eS, Smpdt)
