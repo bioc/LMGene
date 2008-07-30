@@ -5,7 +5,7 @@
 % \VignetteDepends{Biobase, tools, multtest, survival, splines}
 
 \documentclass[11pt]{article}
-\usepackage{amsmath,pstricks,fullpage}
+\usepackage{amsmath,fullpage}
 \usepackage{hyperref}
 
 
