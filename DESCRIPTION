@@ -1,15 +1,15 @@
 Package: LMGene
-Version: 2.19.1
+Version: 2.19.2
 Date: 2013-07-24
-Title: LMGene Software for Data Transformation and Identification 
-	of Differentially Expressed Genes in Gene Expression Arrays
-Author: David Rocke, Geun Cheol Lee, John Tillinghast, Blythe Durbin-Johnson, and Shiquan Wu
+Title: LMGene Software for Data Transformation and Identification of
+        Differentially Expressed Genes in Gene Expression Arrays
+Author: David Rocke, Geun Cheol Lee, John Tillinghast, Blythe
+        Durbin-Johnson, and Shiquan Wu
 Depends: R (>= 2.10.0), Biobase (>= 2.5.5), multtest, survival, affy
 Suggests: affydata
 Maintainer: Blythe Durbin-Johnson <bpdurbin@ucdavis.edu>
-Description: LMGene package for analysis of microarray data 
-	using a linear model and glog data transformation
-biocViews: Microarray, Bioinformatics, DifferentialExpression, Preprocessing
+Description: LMGene package for analysis of microarray data using a
+        linear model and glog data transformation
 License: LGPL
 URL: http://dmrocke.ucdavis.edu/software.html
-
+biocViews: Microarray, DifferentialExpression, Preprocessing
